@@ -1,0 +1,21 @@
+name: deploy
+on:
+  push:
+    branches: [master]
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: executing remote ssh commands using password
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.DO_HOST }}
+          username: ${{ secrets.DO_USERNAME }}
+          password: ${{ secrets.DO_PASSWORD }}
+          script: |
+            cd /home/u3t
+            git clean -fd
+            git pull -f
+            bash deploy.sh
+          script_stop: true

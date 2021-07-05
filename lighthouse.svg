@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="102" height="18" aria-label="lighthouse: 97%">
+  <linearGradient id="b" x2="0" y2="100%">
+    <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
+    <stop offset="1" stop-opacity=".1"/>
+  </linearGradient>
+  <clipPath id="a">
+    <rect width="102" height="20" rx="4" fill="#fff"/>
+  </clipPath>
+  <g clip-path="url(#a)">
+    <path fill="#555" d="M0 0h67v18H0z"/>
+    <path fill="#4c1" d="M67 0h35v18H67z"/>
+    <path fill="url(#b)" d="M0 0h102v18H0z"/>
+  </g>
+  <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110">
+    <text aria-hidden="true" x="345" y="140" fill="#010101" fill-opacity=".3" textLength="570" transform="scale(.1)">
+      lighthouse
+    </text>
+    <text x="345" y="130" textLength="570" transform="scale(.1)">
+      lighthouse
+    </text>
+    <text aria-hidden="true" x="835" y="140" fill="#010101" fill-opacity=".3" textLength="250" transform="scale(.1)">
+      97%
+    </text>
+    <text x="835" y="130" textLength="250" transform="scale(.1)">
+      97%
+    </text>
+  </g>
+</svg>

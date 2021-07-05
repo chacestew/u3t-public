@@ -1,0 +1,44 @@
+{
+  "name": "@u3t/common",
+  "version": "1.0.0",
+  "description": "Common module for U3T",
+  "main": "./build/index.js",
+  "module": "./index.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "del-cli build && tsc",
+    "build-prod": "npm i && npm run build"
+  },
+  "keywords": [
+    "u3t",
+    "u3t-app",
+    "ultimate tic-tac-toe",
+    "ultimate",
+    "tic-tac-toe",
+    "tic tac toe"
+  ],
+  "author": "Chace Stewart",
+  "license": "MIT",
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "not dead"
+  ],
+  "dependencies": {
+    "@types/clone-deep": "^4.0.1",
+    "clone-deep": "^4.0.1",
+    "core-js": "^3.15.2",
+    "del-cli": "^3.0.1",
+    "socket.io": "^4.1.2",
+    "socket.io-client": "^4.1.2",
+    "typescript": "^4.2.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/jest": "^26.0.23",
+    "babel-jest": "^27.0.2",
+    "jest": "^27.0.3"
+  }
+}

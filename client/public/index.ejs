@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>U3T - Ultimate Tic-Tac-Toe</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#594b5c" />
+    <link rel="canonical" href="https://u3t.app" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="U3T - Play Ultimate Tic-Tac-Toe over the internet or on your device, in online or offline multiplayer, or single-player against an AI. Install as an application and play from anywhere!"
+    />
+    <meta name="application-name" content="U3T" />
+    <meta name="apple-mobile-web-app-title" content="U3T" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#594b5c" />
+    <style>
+      @font-face {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local(''), url('../fonts/poppins-v15-latin-regular.woff2') format('woff2'),
+          url('../fonts/poppins-v15-latin-regular.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: local(''), url('../fonts/poppins-v15-latin-700.woff2') format('woff2'),
+          url('../fonts/poppins-v15-latin-700.woff') format('woff');
+      }
+    </style>
+    <% if (process.env.GA_TRACKING_ID) { %>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=<%= process.env.GA_TRACKING_ID %>"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', '<%= process.env.GA_TRACKING_ID %>');
+    </script>
+    <% } %>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>

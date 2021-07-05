@@ -1,0 +1,33 @@
+{
+  "name": "u3t",
+  "version": "1.0.0",
+  "description": "Monorepo for U3T (u3t.app) - The online multiplayer ultimate tic-tac-toe",
+  "workspaces": [
+    "common"
+  ],
+  "keywords": [
+    "u3t",
+    "u3t-app",
+    "ultimate tic-tac-toe",
+    "ultimate",
+    "tic-tac-toe",
+    "tic tac toe"
+  ],
+  "author": "Chace Stewart",
+  "license": "MIT",
+  "scripts": {
+    "install-all": "(cd common && npm install && npm run build) && (cd client && npm install) && (cd server && npm install) && npm install",
+    "start": "(cd client && npm start) & (cd server && npm start)",
+    "build": "(cd server && npm run build) & (cd client && npm run build)",
+    "build-all": "export NODE_ENV=production && (cd common && npm run build-prod) && (cd server && npm run build-prod) && (cd client && npm run build-prod)",
+    "test": "npm run test -w=common"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chacestew/u3t.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chacestew/u3t/issues"
+  },
+  "homepage": "https://github.com/chacestew/u3t#readme"
+}

@@ -1,0 +1,10 @@
+{
+  "printWidth": 90,
+  "singleQuote": true,
+  "overrides": [
+    {
+      "files": [".prettierrc", ".babelrc", ".eslintrc", "*.json"],
+      "options": { "parser": "json" }
+    }
+  ]
+}
