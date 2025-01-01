@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> This repo has been replaced by https://github.com/chacestew/u3t
+
 # U3T
 
 [![Lighthouse](./lighthouse.svg)](https://github.com/emazzotta/lighthouse-badges)
